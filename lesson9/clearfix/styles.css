@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+.red {
+    position: relative;
+    background-color: red;
+    float: right;
+}
+
+.green {
+    position: relative;
+    background-color: green;
+    float: left;
+}
+
+.footer {
+    clear: both;
+}
