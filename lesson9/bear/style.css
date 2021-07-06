@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: darkturquoise;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+header, nav {
+    height: 40px;
+}
+
+nav ul {
+    position: relative;
+    margin: 0;
+    top: 10px;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    margin-left: 16px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: 5000px;
+    background-color: beige;
+}
+
+.bear_head {
+    position: absolute;
+    z-index: 0;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.bear_ear-left, .bear_ear-right {
+    position: absolute;
+    z-index: 0;
+    width: 40px;
+    height: 60px;
+    background-color: brown;
+}
+
+.bear_ear-left {
+    top: calc(50% - 160px);
+    left: calc(50% - 140px);
+}
+
+.bear_ear-right {
+    top: calc(50% - 160px);
+    left: calc(50% + 100px);
+}
+
+.bear_eye-left, .bear_eye-right {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 80px;
+}
+
+.bear_eye-left {
+    left: 40px;
+}
+
+.bear_eye-right {
+    right: 40px;
+}
+
+
+
