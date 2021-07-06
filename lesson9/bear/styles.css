@@ -9,11 +9,11 @@ header {
     width: 100%;
 }
 
-header, nav, nav ul {
+.header, .navigation, .nav-list {
     height: 40px;
 }
 
-nav ul {
+.nav-list {
     position: relative;
     margin: 0;
 }
@@ -27,12 +27,12 @@ nav ul {
     height: 100%;
 }
 
-main {
+.content {
     height: 5000px;
     background-color: beige;
 }
 
-.bear_head {
+.head {
     position: absolute;
     z-index: 0;
     top: calc(50% - 100px);
@@ -42,7 +42,7 @@ main {
     background-color: aquamarine;
 }
 
-.bear_ear-left, .bear_ear-right {
+.ear {
     position: absolute;
     z-index: 0;
     width: 40px;
@@ -50,17 +50,17 @@ main {
     background-color: brown;
 }
 
-.bear_ear-left {
+.ear_left {
     top: calc(50% - 160px);
     left: calc(50% - 140px);
 }
 
-.bear_ear-right {
+.ear_right {
     top: calc(50% - 160px);
     left: calc(50% + 100px);
 }
 
-.bear_eye-left, .bear_eye-right {
+.eye {
     height: 30px;
     width: 30px;
     background-color: grey;
@@ -73,11 +73,11 @@ main {
     top: 80px;
 }
 
-.bear_eye-left {
+.eye_left {
     left: 40px;
 }
 
-.bear_eye-right {
+.eye_right {
     right: 40px;
 }
 
