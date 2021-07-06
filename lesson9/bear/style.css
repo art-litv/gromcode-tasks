@@ -16,18 +16,14 @@ header, nav {
 nav ul {
     position: relative;
     margin: 0;
-    top: 10px;
 }
 
 nav li {
     list-style: none;
     float: left;
     margin-left: 16px;
-}
-
-nav li a {
     color: white;
-    text-decoration: none;
+    line-height: 37px;
 }
 
 main {
