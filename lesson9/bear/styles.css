@@ -24,6 +24,7 @@ nav li {
     margin-left: 16px;
     color: white;
     line-height: 41px;
+    height: 100%;
 }
 
 main {
