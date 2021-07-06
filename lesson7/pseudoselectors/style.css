@@ -1,0 +1,35 @@
+a:link {
+    color: white;
+    background-color: black;
+}
+
+a:visited {
+    color: green;
+    background-color: orange;
+}
+
+button:active, a:active {
+    border: 3px solid red;
+}
+
+a:hover {
+    font-size: 24px;
+}
+
+button:disabled {
+    border: 2px dashed grey;
+}
+
+button:enabled:hover {
+    color: white;
+    background-color: grey;
+}
+
+input:focus {
+    background-color: orange;
+}
+
+input[type="checkbox"]:checked {
+    margin-left: 20px;
+}
+
