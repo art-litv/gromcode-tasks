@@ -1,0 +1,43 @@
+div {
+    margin: 50px;
+    box-sizing: border-box;
+}
+
+.radius {
+    width: 100px;
+    height: 50px;
+    background-color: forestgreen;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.oval {
+    width: 100px;
+    height: 50px;
+    background-color: darkmagenta;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.triangle {
+    width: 50px;
+    border: 50px solid transparent;
+    border-top-color: brown;
+}
