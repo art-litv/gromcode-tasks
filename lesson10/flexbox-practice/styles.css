@@ -7,16 +7,16 @@ header {
   justify-content: center;
 }
 
-.articles-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .article {
   width: 300px;
-  min-width: 300px;
   margin: 8px;
   padding: 16px;
   background-color: bisque;
   flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
 }
