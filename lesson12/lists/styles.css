@@ -3,12 +3,6 @@ li {
   font-size: 1.5em;
 }
 
-.third {
-  text-decoration: underline;
-  text-decoration-color: green;
-  -moz-text-decoration-color: green;
-}
-
 .second {
   text-decoration: line-through;
 }
