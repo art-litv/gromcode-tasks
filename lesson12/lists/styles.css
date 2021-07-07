@@ -3,7 +3,7 @@ li {
   font-size: 1.5em;
 }
 
-li:last-child {
+.third {
   text-decoration: green underline;
 }
 
