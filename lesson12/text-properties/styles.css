@@ -4,8 +4,7 @@
   font-size: 18px;
 }
 
-section,
-section > * {
+section {
   margin: 32px;
 }
 
