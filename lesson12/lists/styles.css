@@ -3,6 +3,10 @@ li {
   font-size: 1.5em;
 }
 
+.list {
+  padding: 0;
+}
+
 .third {
   text-decoration: green underline;
 }
