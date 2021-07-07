@@ -1,0 +1,28 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin: 16px;
+}
+
+.text {
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 8px;
+  bottom: -40px;
+  display: none;
+}
+
+.dropdown:hover .tooltip {
+  display: block;
+}
