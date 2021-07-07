@@ -1,6 +1,6 @@
 .dropdown {
   margin: 16px;
-  height: 100%;
+  display: inline-block;
 }
 
 .menu-list {
