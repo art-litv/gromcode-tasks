@@ -8,12 +8,12 @@ header {
 }
 
 .article {
-  width: 300px;
   margin: 8px;
   padding: 16px;
   background-color: bisque;
   flex-grow: 1;
   flex-shrink: 0;
+  width: 301px;
 }
 
 .articles-list {
