@@ -22,8 +22,12 @@ body {
 .header__nav-list {
   display: flex;
   margin: 0;
-  gap: 16px;
+  padding: 0;
   list-style: none;
+}
+
+.header__nav-item {
+  margin-left: 16px;
 }
 
 .footer {
