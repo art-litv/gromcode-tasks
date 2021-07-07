@@ -10,7 +10,7 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 50%;
-  margin: 10px auto;
+  margin: auto;
 }
 
 div {
