@@ -1,6 +1,10 @@
+.dropdown {
+  margin: 16px;
+  height: 100%;
+}
+
 .menu-list {
   margin: 0;
-  margin-top: 15px;
   padding: 0;
   background-color: lightcyan;
   color: black;
@@ -21,7 +25,10 @@
 }
 
 .menu-button {
+  display: inline-block;
   padding: 16px;
+  color: white;
+  font-size: 16px;
   background-color: darkgreen;
   opacity: 0.8;
   cursor: pointer;
@@ -29,12 +36,6 @@
 
 .menu-button:hover {
   opacity: 1;
-  font-size: 16px;
-  color: white;
-}
-
-.dropdown {
-  margin: 16px;
 }
 
 .dropdown:hover .menu-list {
