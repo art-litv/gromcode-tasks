@@ -1,27 +1,29 @@
-header, footer {
-    height: 50px;
+header,
+footer {
+  height: 50px;
 }
 
 header {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 footer {
-    background-color: green;
-    clear: both;
+  background-color: green;
+  clear: both;
 }
 
-main, .sidebar {
-    height: 500px;
-    float: left;
+main,
+.sidebar {
+  height: 500px;
+  float: left;
 }
 
 main {
-    width: 80%;
-    background-color: pink;
+  width: 80%;
+  background-color: pink;
 }
 
 .sidebar {
-    width: 20%;
-    background-color: grey;
+  width: 20%;
+  background-color: grey;
 }
