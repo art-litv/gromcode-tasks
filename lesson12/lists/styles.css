@@ -4,8 +4,7 @@ li {
 }
 
 .third {
-  text-decoration: underline;
-  text-decoration-color: green;
+  text-decoration: green underline;
 }
 
 .second {
@@ -13,6 +12,5 @@ li {
 }
 
 .first {
-  text-decoration: overline;
-  text-decoration-color: red;
+  text-decoration: red overline;
 }
