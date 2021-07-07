@@ -1,0 +1,20 @@
+li {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.third {
+  text-decoration: underline;
+  text-decoration-color: green;
+  -moz-text-decoration-color: green;
+}
+
+.second {
+  text-decoration: line-through;
+}
+
+.first {
+  text-decoration: overline;
+  text-decoration-color: red;
+  -moz-text-decoration-color: red;
+}
