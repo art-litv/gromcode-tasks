@@ -4,9 +4,7 @@
 }
 
 .list li:last-child {
-  text-decoration: underline;
-  text-decoration-color: green;
-  -moz-text-decoration-color: green;
+  text-decoration: underline green;
 }
 
 .list li:nth-child(2) {
@@ -14,7 +12,5 @@
 }
 
 .list li:first-child {
-  text-decoration: overline;
-  text-decoration-color: red;
-  -moz-text-decoration-color: red;
+  text-decoration: overline red;
 }
