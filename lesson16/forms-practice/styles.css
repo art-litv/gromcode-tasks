@@ -12,5 +12,9 @@ form > * {
 }
 
 [name="story"] {
-  margin-bottom: 11px;
+  margin-bottom: 13px;
+}
+
+[name="primaryLanguage"] {
+  margin-bottom: 10px;
 }
