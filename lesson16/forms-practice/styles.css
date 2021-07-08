@@ -2,7 +2,15 @@ form {
   margin: 32px;
 }
 
-input {
+form > * {
   margin: 8px;
   display: block;
+}
+
+[name="agree"] {
+  margin-bottom: 16px;
+}
+
+[name="story"] {
+  margin-bottom: 11px;
 }
