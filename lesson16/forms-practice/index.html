@@ -14,13 +14,18 @@
   </head>
   <body>
     <form>
-      <input type="text" name="primaryLanguage" disabled />
+      <input type="text" name="primaryLanguage" value="HTML" disabled />
       <input type="checkbox" name="agree" unchecked />
       <input type="checkbox" name="like" checked readonly />
       <input type="color" name="favouriteColor" value="#ff7f50" />
       <input type="date" name="birthDate" value="2021-01-02" />
       <input type="datetime-local" name="birthTime" value="2024-10-04T13:02" />
-      <input type="email" placeholder="example@domain.com" required />
+      <input
+        type="email"
+        name="email"
+        placeholder="example@domain.com"
+        required
+      />
       <input type="file" name="avatar" />
       <input type="month" name="startLearning" value="2020-01" />
       <input type="number" name="favouriteNumber" value="17" />
@@ -32,17 +37,19 @@
       ></textarea>
       <input type="password" name="password" value="secret" />
       <div class="languages">
-        <input type="radio" id="html" name="language" />
-        <label for="html">HTML</label>
-        <input type="radio" id="css" name="language" />
-        <label for="css">CSS</label>
-        <input type="radio" id="javascript" name="language" />
-        <label for="javascript">JavaScript</label>
+        <input type="radio" id="html" name="language" value="html" />HTML
+        <input type="radio" id="css" name="language" value="css" checked />CSS
+        <input
+          type="radio"
+          id="javascript"
+          name="language"
+          value="javascript"
+        />JavaScript
       </div>
       <input type="range" name="learningProgress" value="30" />
       <select name="framework">
         <option value="react">React</option>
-        <option value="jquery">jQuery</option>
+        <option value="jquery" selected>jQuery</option>
         <option value="bootstrap">Bootstrap</option>
       </select>
       <input type="search" name="search" placeholder="Type first letters..." />
