@@ -11,6 +11,7 @@
   width: 25px;
   height: 25px;
   background-color: #d3d3d3;
+  display: inline-block;
   top: 0;
   left: 0;
 }
