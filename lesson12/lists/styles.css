@@ -1,16 +1,20 @@
-li {
-  list-style-type: none;
+.list li {
+  list-style: none;
   font-size: 1.5em;
 }
 
-.third {
-  text-decoration: green underline;
+.list li:last-child {
+  text-decoration: underline;
+  text-decoration-color: green;
+  -moz-text-decoration-color: green;
 }
 
-.second {
+.list li:nth-child(2) {
   text-decoration: line-through;
 }
 
-.first {
-  text-decoration: red overline;
+.list li:first-child {
+  text-decoration: overline;
+  text-decoration-color: red;
+  -moz-text-decoration-color: red;
 }
