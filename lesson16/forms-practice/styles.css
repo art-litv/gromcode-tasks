@@ -2,7 +2,7 @@ form {
   margin: 32px;
 }
 
-form > * {
+input {
   margin: 8px;
   display: block;
 }
