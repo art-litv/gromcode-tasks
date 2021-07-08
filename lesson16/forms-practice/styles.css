@@ -3,18 +3,6 @@ form {
 }
 
 form > * {
-  margin: 8px;
   display: block;
-}
-
-[name="agree"] {
-  margin-bottom: 11px;
-}
-
-[name="story"] {
-  margin-bottom: 13px;
-}
-
-[name="primaryLanguage"] {
-  margin-bottom: 10px;
+  margin: 8px;
 }
