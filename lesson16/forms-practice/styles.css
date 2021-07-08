@@ -2,10 +2,7 @@ form {
   margin: 32px;
 }
 
-form * {
-  margin: 8px;
-}
-
 form > * {
+  margin: 8px;
   display: block;
 }
