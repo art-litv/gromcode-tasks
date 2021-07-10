@@ -4,17 +4,19 @@
 
 .container {
   display: flex;
-  min-width: 100vw;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.spinner {
+  margin: auto;
 }
 
 .spinner-text {
   font-family: monospace;
   font-size: 16px;
   text-transform: uppercase;
-  animation: 2s blinking linear infinite;
+  animation: 2s linear infinite blinking;
 }
 
 .circle {
@@ -22,10 +24,9 @@
   height: 50px;
   border: 4px solid lightgrey;
   border-top-color: black;
-  margin: 0 auto;
-  margin-bottom: 8px;
+  margin: 0 auto 8px;
   border-radius: 50%;
-  animation: 2s spinning linear infinite;
+  animation: 2s linear infinite spinning;
 }
 
 @keyframes blinking {
@@ -46,6 +47,7 @@
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
