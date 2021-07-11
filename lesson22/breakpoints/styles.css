@@ -50,10 +50,10 @@
 
   .products,
   .products > div {
-    width: 66.6%;
+    width: calc(100% * 2 / 3);
   }
 
   .news {
-    width: 33.3%;
+    width: calc(100% * 1 / 3);
   }
 }
