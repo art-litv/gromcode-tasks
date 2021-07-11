@@ -4,10 +4,12 @@
 
 .navigation {
   background-color: #ff7f50;
+  flex-grow: 1;
 }
 
 .products-list {
   background-color: #006400;
+  flex-grow: 1;
 }
 
 .news {
@@ -35,11 +37,6 @@
   .products {
     display: flex;
   }
-
-  .navigation,
-  .products-list {
-    flex-grow: 1;
-  }
 }
 
 @media screen and (min-width: 900px) {
@@ -50,10 +47,10 @@
 
   .products,
   .products > div {
-    flex-grow: 0.66; /* ~ 66% width */
+    flex-grow: 2;
   }
 
   .news {
-    flex-grow: 0.33; /* ~ 33% width */
+    flex-grow: 1;
   }
 }
