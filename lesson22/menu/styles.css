@@ -7,6 +7,14 @@ html {
   font-size: 16px;
 }
 
+.header {
+  height: 3em;
+  padding: 1em;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+
 .header-btn {
   font-size: 2em;
   padding: 0;
@@ -14,7 +22,6 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: auto 0;
   display: none;
 }
 
@@ -49,5 +56,9 @@ html {
 @media screen and (max-width: 600px) {
   .header-btn {
     display: block;
+  }
+
+  .navigation {
+    display: none;
   }
 }
