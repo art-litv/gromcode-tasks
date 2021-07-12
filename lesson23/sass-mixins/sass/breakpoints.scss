@@ -1,0 +1,23 @@
+@mixin sm {
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin extra-lg {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
