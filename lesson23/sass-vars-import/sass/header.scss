@@ -1,0 +1,30 @@
+.header {
+  background-color: $color-grey;
+}
+
+.nav-list {
+  height: 7 * $unit;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    border-radius: $border-radius;
+    color: $text-color-secondary;
+    padding: $unit;
+    margin-left: $unit;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: $color-secondary;
+
+    &_selected {
+      background-color: $color-primary;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
