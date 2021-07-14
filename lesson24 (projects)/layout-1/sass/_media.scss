@@ -1,0 +1,235 @@
+.container {
+  @include desktop {
+    margin: 0 130px;
+  }
+}
+
+.header {
+  @include desktop {
+    background-color: #F3C6BD;
+    padding-top: 39px;
+    box-shadow: none;
+    display: block;
+    position: static;
+    height: unset;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__burger,
+    &__logo-text {
+      display: none;
+    }
+
+    &__navigation,
+    &__button {
+      display: block;
+    }
+
+    &__navigation {
+      margin-top: 7px;
+    }
+  }
+}
+
+.headline {
+  @include desktop {
+    height: 602px;
+    padding-top: 76px;
+    position: relative;
+    z-index: 1;
+
+    &__title {
+      font-size: 80px;
+      line-height: 78px;
+      max-width: 754px;
+    }
+
+    &__text {
+      max-width: 456px;
+    }
+
+    &__image {
+      position: absolute;
+      z-index: -1;
+      top: 50px;
+      right: 25px;
+    }
+
+    &__button-primary,
+    &__button-secondary {
+      display: inline-block;
+      width: 160px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.audience {
+  @include desktop {
+    padding-bottom: 110px;
+
+    &__cards-container {
+      flex-direction: row;
+      gap: 31px;
+      margin-top: 111px;
+    }
+
+    &__buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__title {
+      max-width: 555px;
+      margin: 24px auto 30px;
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    &__text {
+      max-width: 555px;
+      margin: 0 auto;
+    }
+
+    &__button-primary,
+    &__button-secondary {
+      width: 160px;
+      margin-top: 34px;
+    }
+  }
+}
+
+.order {
+  @include desktop {
+    padding: 73px 0 72px;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 122px;
+    }
+
+    &__content {
+      max-width: 570px;
+    }
+
+    &__image {
+      margin: 0;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+
+    &__title {
+      text-align: left;
+      margin: 0 0 12px;
+    }
+
+    &__form {
+      margin-top: 26px;
+    }
+
+    &__email-input {
+      width: 385px;
+      margin-right: 5px;
+      text-align: left;
+      padding-left: 15px;
+
+      &::placeholder {
+        color: $text-color-primary;
+      }
+    }
+
+    &__submit-button {
+      width: 160px;
+    }
+  }
+}
+
+.footer {
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 44px 0 0;
+
+    &__navigation-container {
+      gap: 126px;
+      padding-bottom: 59px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    &__description {
+      display: block;
+      font-size: 18px;
+      line-height: 26px;
+      color: rgba(43, 41, 45, 0.6);
+      max-width: 360px;
+    }
+
+    &__download-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 25px;
+    }
+
+    &__download {
+      margin: 0;
+    }
+
+    &__logo {
+      height: auto;
+      flex-direction: row;
+      align-self: start;
+    }
+
+    &__logo-text {
+      align-items: flex-start;
+    }
+
+    &__logo-title {
+      margin: 0;
+    }
+
+    &__media-container {
+      flex-basis: 100%;
+    }
+
+    &__navigation {
+      padding-top: 17px;
+      display: flex;
+      align-items: flex-start;
+      gap: 29px;
+      border: none;
+    }
+
+    &__navigation-list {
+      width: 265px;
+      margin: 0;
+    }
+
+    &__media-container {
+      border-top: 1px solid #E3E3E3;
+      height: 50px;
+
+      .container {
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    &__terms,
+    &__media {
+      margin: 0;
+    }
+  }
+}

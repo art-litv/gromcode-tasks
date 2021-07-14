@@ -1,0 +1,44 @@
+/* SETTINGS-BLOCKS */
+
+@import "breakpoints";
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  color: $text-color-primary;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 $mobile-container-margin;
+}
+
+/* BLOCKS-COMPONENTS */
+
+@import "components/logo";
+@import "components/navigation";
+@import "components/button-primary";
+@import "components/button-secondary";
+@import "components/section-heading";
+@import "components/section-title";
+@import "components/section-text";
+@import "components/card";
+@import "components/form";
+
+/* BLOCKS-SECTIONS */
+
+@import "sections/header";
+@import "sections/headline";
+@import "sections/audience";
+@import "sections/order";
+@import "sections/footer";
+
+/* MEDIA */
+
+@import "media";

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <title>Foundation - Main Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <picture class="logo__picture">
+            <source
+              srcset="./icons/desktop-logo.svg"
+              media="(min-width: 1400px)"
+            />
+            <source srcset="./icons/mobile-logo.svg" />
+            <img class="logo__image" src="./icons/mobile-logo.svg" alt="logo" />
+          </picture>
+          <span class="header__logo-text logo__text">Foundation</span>
+        </div>
+        <div class="header__links">
+          <div class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item_selected">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Stories</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Library</a>
+              </li>
+            </ul>
+          </div>
+          <button class="header__button button-primary">Get Started</button>
+        </div>
+      </div>
+      <button class="header__burger">
+        <img class="header__burger-img" src="./icons/burger.svg" alt="burger" />
+      </button>
+    </header>
+    <section class="headline">
+      <div class="container">
+        <div class="headline__title">Build stunning websites & apps.</div>
+        <div class="headline__text section-text">
+          Create live segments and target the right people for messages based on
+          their behaviors.
+        </div>
+        <button class="headline__button-primary button-primary">
+          Get Started
+        </button>
+        <button class="headline__button-secondary button-secondary">
+          Learn More
+        </button>
+      </div>
+      <img class="headline__image" src="./img/headline.png" alt="headline" />
+    </section>
+    <section class="audience">
+      <div class="container">
+        <div class="audience__heading section-heading">Engage Visitors</div>
+        <h2 class="audience__title section-title">Understand your audience</h2>
+        <div class="audience__text section-text">
+          Early stage company? Eligible applications get all of our products for
+          just $49 a month.
+        </div>
+        <div class="audience__buttons-container">
+          <button class="audience__button-primary button-primary">
+            Get Started
+          </button>
+          <button class="audience__button-secondary button-secondary">
+            Learn More
+          </button>
+        </div>
+        <div class="audience__cards-container">
+          <div class="card">
+            <img src="./img/developers.svg" alt="robot" class="card-image" />
+            <div class="card-title">Developers</div>
+          </div>
+          <div class="card">
+            <img src="./img/entertainment.svg" alt="robot" class="card-image" />
+            <div class="card-title">Entertainment</div>
+          </div>
+          <div class="card">
+            <img src="./img/athletes.svg" alt="robot" class="card-image" />
+            <div class="card-title">Athletes</div>
+          </div>
+          <div class="card">
+            <img src="./img/creators.svg" alt="robot" class="card-image" />
+            <div class="card-title">Creators</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
+        <img src="./img/order.png" alt="order" class="order__image" />
+        <div class="order__content">
+          <h2 class="order__title section-title">Start your free trial.</h2>
+          <div class="order__text section-text">
+            Get notified about company updates, news and blog posts. We hate
+            spam.
+          </div>
+          <form class="order__form">
+            <input
+              type="email"
+              class="order__email-input form-input"
+              placeholder="Enter your email"
+              name="email"
+            />
+            <button type="submit" class="order__submit-button button-primary">
+              Get Started
+            </button>
+            <div class="order__terms">
+              Free 14-day trial · Easy setup · Cancel any time. Check out
+              <a href="#" class="order__terms-link">Terms of Use.</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__navigation-container container">
+        <div class="footer__download-container">
+          <div class="footer__logo logo">
+            <img
+              class="footer__image logo__picture"
+              src="./icons/colorful-logo.svg"
+              alt="colorful-logo"
+            />
+            <div class="footer__logo-text logo__text-container">
+              <div class="footer__logo-title logo__text">Foundation</div>
+              <div class="footer__logo-subtitle logo__subtext">
+                Startup landing template
+              </div>
+            </div>
+          </div>
+          <div class="footer__description">
+            Foundation is a website template for startups and small teams. It
+            helps to build a website in no time.
+          </div>
+          <div class="footer__download">
+            <a href="#" class="footer__appstore-link"
+              ><img src="./img/appstore.png" alt="appstore-download"
+            /></a>
+            <a href="#" class="footer__googleplay-link"
+              ><img src="./img/googleplay.png" alt="googleplay-download"
+            /></a>
+          </div>
+        </div>
+        <div class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <span class="footer__navigation-title">Product</span>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Acquire Users</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Content Marketing</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Website Templates</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link"
+                >Customer Management</a
+              >
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Virtual Inbox</a>
+            </li>
+          </ul>
+          <ul class="footer__navigation-list">
+            <span class="footer__navigation-title">Company</span>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">About Foundation</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Brand Guidelines</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Press Kit</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#" class="footer__navigation-link">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__media-container">
+        <div class="container">
+          <ul class="footer__terms">
+            <li class="footer__terms-item">
+              <a href="#" class="footer__terms-link">Terms</a>
+            </li>
+            <li class="footer__terms-item">
+              <a href="#" class="footer__terms-link">Privacy</a>
+            </li>
+            <li class="footer__terms-item">
+              <a href="#" class="footer__terms-link">License</a>
+            </li>
+          </ul>
+          <ul class="footer__media">
+            <li class="footer__media-item">
+              <a href="#" class="footer__media-link">
+                <img src="./icons/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li class="footer__media-item">
+              <a href="#" class="footer__media-link">
+                <img src="./icons/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="footer__media-item">
+              <a href="#" class="footer__media-link">
+                <img src="./icons/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

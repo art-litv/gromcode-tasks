@@ -1,0 +1,33 @@
+.header {
+  height: 64px;
+  box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
+  position: fixed;
+  display: flex; // for mobile burger button outside container
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+
+  &__burger {
+    min-width: 58px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    background-color: white;
+  }
+
+  &__links {
+    display: flex;
+    gap: 94px;
+  }
+
+  &__navigation,
+  &__button {
+    display: none;
+  }
+
+  &__burger-img {
+    width: 18px;
+    height: 13px;
+  }
+}

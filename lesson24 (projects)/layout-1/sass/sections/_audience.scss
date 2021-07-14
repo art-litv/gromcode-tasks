@@ -1,0 +1,31 @@
+.audience {
+  padding: 50px 0;
+  background: #EDF8FB;
+
+  &__heading,
+  &__title,
+  &__text {
+    text-align: center;
+  }
+
+  &__button-primary,
+  &__button-secondary {
+    width: 100%;
+  }
+
+  &__button-primary {
+    margin-top: 30px;
+  }
+
+  &__button-secondary {
+    margin-top: 12px;
+  }
+
+  &__cards-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
