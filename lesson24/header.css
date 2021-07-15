@@ -1,0 +1,17 @@
+.header {
+  width: 1140px;
+  height: 65px;
+  margin: auto;
+  display: flex;
+}
+
+.header__button {
+  background-color: #3040c4;
+  color: white;
+  font-weight: 700;
+  line-height: 13px;
+  border: none;
+  border-radius: 2px;
+  width: 160px;
+  height: 48px;
+}
