@@ -1,17 +1,33 @@
 .header {
-  width: 1140px;
-  height: 65px;
-  margin: auto;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
   display: flex;
+  align-items: center;
 }
 
-.header__button {
-  background-color: #3040c4;
-  color: white;
-  font-weight: 700;
-  line-height: 13px;
+.header__menu-button {
+  width: 58px;
   border: none;
-  border-radius: 2px;
-  width: 160px;
-  height: 48px;
+  border-left: 1px solid #00000026;
+  height: 100%;
+  margin-left: auto;
+  background: transparent;
+}
+
+.header__logo-image {
+  margin-left: 15px;
+}
+
+.header__menu-icon {
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
+}
+
+.header__navigation,
+.header__button,
+.header .logo__description {
+  display: none;
 }

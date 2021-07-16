@@ -13,25 +13,24 @@ button {
 }
 
 .page {
-  width: 1400px;
-  min-height: 100vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .top-section {
   background-color: #f3c6bd;
-  padding-top: 39px;
+}
+
+.downloads {
+  display: flex;
+  gap: 10px;
 }
 
 .downloads__item {
   text-decoration: none;
+  max-height: 40px;
 }
 
 .additional-navigation {
-  margin-top: 60px;
-  margin-left: auto;
   display: flex;
   gap: 29px;
 }
