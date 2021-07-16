@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .logo__image {
@@ -20,23 +21,19 @@
 
   .header {
     width: 1140px;
-    height: 65px;
+    height: 62px;
     margin: auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background-color: #f3c6bd;
-  }
-
-  .header__logo-image {
-    margin-left: 0;
   }
 
   .header__menu-button {
     display: none;
   }
 
-  .header__navigation,
   .header__button,
+  .header__navigation,
   .header .logo__description {
     display: block;
   }
