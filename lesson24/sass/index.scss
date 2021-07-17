@@ -28,14 +28,17 @@ button {
 @import "components/buttons";
 @import "components/downloads";
 @import "components/additional-navigation";
+@import "components/section-text";
 @import "components/navigation";
 @import "components/navlinks";
+@import "components/card";
 @import "components/logo";
 
 /* BLOCKS IMPORTS */
 
 @import "blocks/header";
 @import "blocks/headline";
+@import "blocks/audience";
 @import "blocks/order";
 @import "blocks/footer";
 

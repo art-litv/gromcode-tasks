@@ -99,12 +99,52 @@
 
 .audience {
     @include desktop-screen {
-        margin-top: 108px;
-        padding: 0;
+        padding: 0 0 110px 0;
 
-        &__details {
+        &__cards-container {
+            flex-direction: row;
+            justify-content: center;
+            gap: 31px;
+            margin-top: 111px;
+        }
+
+        &__card {
+            width: 262px;
+            height: 300px;
+        }
+
+        &__title {
+            margin-top: 108px;
+        }
+
+        &__subtitle {
+            margin: 24px auto auto;
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
             max-width: 555px;
-            margin: 100px auto 0 auto;
+        }
+
+        &__text {
+            margin: 30px auto auto;
+            max-width: 555px;
+        }
+
+        &__primary-btn {
+            width: 160px;
+            margin: 0;
+        }
+
+        &__secondary-btn {
+            width: 158px;
+            margin: 0;
+        }
+
+        &__buttons {
+            display: flex;
+            margin-top: 34px;
+            gap: 10px;
+            justify-content: center;
         }
     }
 }
