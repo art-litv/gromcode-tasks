@@ -1,0 +1,25 @@
+@import "variables";
+@import "breakpoints";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+}
+
+/* COMPONENT-BLOCKS */
+
+@import "components/card";
+@import "components/popular-wrap";
+
+/* SECTION-BLOCKS */
+
+@import "blocks/price-cards";
+
+/* MEDIA */
+
+@import "media";

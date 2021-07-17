@@ -1,0 +1,6 @@
+.price-cards {
+    @include small-screen {
+        flex-direction: column;
+        padding: 15% 0;
+    }
+}
