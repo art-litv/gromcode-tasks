@@ -1,0 +1,217 @@
+.top-section {
+    @include desktop-screen {
+        padding-top: 39px;
+    }
+}
+
+.page {
+    @include desktop-screen {
+        width: 1400px;
+        min-height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+
+.logo {
+    @include desktop-screen {
+        &__image {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.header {
+    @include desktop-screen {
+        width: 1140px;
+        height: 62px;
+        margin: auto;
+        display: flex;
+        background-color: #f3c6bd;
+
+        &__menu-button {
+            display: none;
+        }
+
+        &__button,
+        &__navigation,
+        &__logo-description {
+            display: block;
+        }
+    }
+}
+
+.headline {
+    @include desktop-screen {
+        width: 1140px;
+        margin: auto;
+        margin-top: 84px;
+        position: relative;
+        z-index: 1;
+
+        &__content {
+            margin: 0;
+        }
+
+        &__title {
+            width: 754px;
+            height: 165px;
+            font-size: 80px;
+            line-height: 78px;
+            letter-spacing: -0.5px;
+        }
+
+        &__description {
+            margin: 34px 0 58px;
+            width: 456px;
+            height: 102px;
+        }
+
+        &__banner {
+            position: absolute;
+            z-index: -1;
+            right: -105px;
+            top: 0px;
+            max-width: 100%;
+            width: 796px;
+            height: 448px;
+        }
+
+        &__button {
+            width: 160px;
+
+            &:last-child {
+                width: 158px;
+            }
+        }
+
+        &__buttons {
+            gap: 10px;
+            margin-bottom: 126px;
+            flex-direction: row;
+        }
+    }
+}
+
+.audience {
+    @include desktop-screen {
+        margin-top: 108px;
+        padding: 0;
+
+        &__details {
+            max-width: 555px;
+            margin: 100px auto 0 auto;
+        }
+    }
+}
+
+.order {
+    @include desktop-screen {
+        display: flex;
+        align-items: center;
+        padding: 73px 0 73px 224px;
+        gap: 122px;
+
+        &__illustration {
+            height: 296px;
+            width: auto;
+            margin: 0;
+        }
+
+        &__content {
+            max-width: 555px;
+        }
+
+        &__title {
+            margin: 0;
+            text-align: left;
+        }
+
+        &__text {
+            height: 64px;
+            margin-top: 12px;
+        }
+
+        &__form {
+            margin-top: 26px;
+        }
+
+        &__button {
+            width: 160px;
+            margin: 0;
+        }
+
+        &__email {
+            width: 385px;
+            text-align: left;
+            padding-left: 15px;
+        }
+    }
+}
+
+.footer {
+    @include desktop-screen {
+        &__links {
+            width: 1140px;
+            height: 50px;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &__terms {
+            width: 1140px;
+            line-height: 50px;
+            margin: 0 auto;
+        }
+
+        &__navigation {
+            width: 1140px;
+            height: 338px;
+            flex-direction: row;
+        }
+
+        &__description {
+            max-width: 360px;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(43, 41, 45, 0.6);
+            display: block;
+        }
+
+        &__downloads {
+            margin-top: 25px;
+        }
+
+        &__line {
+            display: block;
+        }
+
+        &__desktop-line {
+            display: none;
+        }
+
+        &__social-links {
+            margin: 0 0 0 auto;
+        }
+
+        &__logo {
+            flex-direction: row;
+            text-align: left;
+            gap: 0;
+        }
+
+        &__about-company {
+            margin-top: 44px;
+            align-items: flex-start;
+        }
+
+        &__additional-navigation {
+            flex-direction: row;
+            margin: 60px 0 0 126px;
+        }
+    }
+}

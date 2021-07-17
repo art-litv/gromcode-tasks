@@ -1,0 +1,44 @@
+@import "breakpoints";
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $base-font-family;
+    color: $base-text-color;
+    font-size: $base-font-size;
+}
+
+button {
+    cursor: pointer;
+}
+
+.page {
+    width: 100%;
+}
+
+.top-section {
+    background-color: #f3c6bd;
+}
+
+/* COMPONENTS IMPORTS */
+
+@import "components/buttons";
+@import "components/downloads";
+@import "components/additional-navigation";
+@import "components/navigation";
+@import "components/navlinks";
+@import "components/logo";
+
+/* BLOCKS IMPORTS */
+
+@import "blocks/header";
+@import "blocks/headline";
+@import "blocks/order";
+@import "blocks/footer";
+
+/* MEDIA IMPORTS */
+
+@import "media";
