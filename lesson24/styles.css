@@ -411,17 +411,19 @@ button {
 @media (min-width: 1400px) {
   .order {
     display: flex;
-    align-items: center;
-    padding: 73px 0 73px 224px;
-    gap: 122px;
+    justify-content: center;
+    padding: 0;
+    min-height: 441px;
+    gap: 121px;
   }
   .order__illustration {
     height: 296px;
     width: auto;
-    margin: 0;
+    margin: 73px 0 0;
   }
   .order__content {
     max-width: 555px;
+    margin-top: 106px;
   }
   .order__title {
     margin: 0;
@@ -440,7 +442,6 @@ button {
   }
   .order__email {
     width: 385px;
-    text-align: left;
     padding-left: 15px;
   }
 }

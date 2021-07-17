@@ -112,18 +112,20 @@
 .order {
     @include desktop-screen {
         display: flex;
-        align-items: center;
-        padding: 73px 0 73px 224px;
-        gap: 122px;
+        justify-content: center;
+        padding: 0;
+        min-height: 441px;
+        gap: 121px;
 
         &__illustration {
             height: 296px;
             width: auto;
-            margin: 0;
+            margin: 73px 0 0;
         }
 
         &__content {
             max-width: 555px;
+            margin-top: 106px;
         }
 
         &__title {
@@ -147,7 +149,6 @@
 
         &__email {
             width: 385px;
-            text-align: left;
             padding-left: 15px;
         }
     }
