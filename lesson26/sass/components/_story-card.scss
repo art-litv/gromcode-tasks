@@ -21,6 +21,10 @@
         margin-top: 19px;
         max-width: 460px;
 
+        @include desktop {
+            max-width: 420px;
+        }
+
         &:last-child {
             min-height: 240px;
         }
@@ -31,6 +35,20 @@
 
         &:last-child {
             margin: 0;
+        }
+
+        &_mobile {
+            @include desktop {
+                display: none;
+            }
+        }
+
+        &_desktop {
+            display: none;
+
+            @include desktop {
+                display: block;
+            }
         }
     }
 

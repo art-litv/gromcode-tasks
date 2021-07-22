@@ -85,9 +85,13 @@
 							class="review__quotes"
 						/>
 					</div>
-					<div class="review__text">
+					<div class="review__text review__text_mobile">
 						“Thanks to VanGoux, our senior frontend developer was 70% faster in
 						building React.js components!”
+					</div>
+					<div class="review__text review__text_desktop">
+						“Our senior frontend developer was 70% faster in building React.js
+						components thanks to VanGoux!”
 					</div>
 				</div>
 				<div class="review">
@@ -357,11 +361,16 @@
 									Hi! We are Tom & Kay — two passionate engineers of user
 									experience. Building things people want makes us happy!
 								</p>
-								<p class="story-card__paragraph">
+								<p class="story-card__paragraph story-card__paragraph_mobile">
 									Kay is a Ex-Googler and Tom is a startup veteran. We started
 									VanGoux because it didn’t make sense to us that when a
 									designer creates a design, engineers have to code it from
 									scratch.
+								</p>
+								<p class="story-card__paragraph story-card__paragraph_desktop">
+									Kay is a former Googler and Tom is a startup veteran. We
+									started VanGoux because it didn’t make sense to us that UI
+									designs needed to be recreated in code from scratch.
 								</p>
 							</div>
 						</div>
@@ -398,13 +407,9 @@
 			<!-- Footer -->
 
 			<footer class="page-footer">
-				<div class="page-footer__logo">
-					<img
-						src="./icons/logo.svg"
-						alt="logo"
-						class="page-footer__logo-image"
-					/>
-					<div class="page-footer__logo-text">Site made with VanGoux</div>
+				<div class="footer-logo">
+					<img src="./icons/logo.svg" alt="logo" class="footer-logo__image" />
+					<div class="footer-logo__text">Site made with VanGoux</div>
 				</div>
 				<div class="page-footer__links">
 					<a class="page-footer__link" href="#">

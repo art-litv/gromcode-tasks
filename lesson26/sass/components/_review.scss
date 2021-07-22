@@ -53,6 +53,20 @@
         max-width: 460px;
         font-size: 16px;
         line-height: 30px;
+
+        &_desktop {
+            display: none;
+
+            @include desktop {
+                display: block;
+            }
+        }
+
+        &_mobile {
+            @include desktop {
+                display: none;
+            }
+        }
     }
 
     &__heading {
