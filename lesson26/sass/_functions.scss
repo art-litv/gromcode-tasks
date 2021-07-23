@@ -1,7 +1,0 @@
-@function calc-mobile-padding($padding) {
-    @return $padding / $mobile-layout-width * 100%;
-}
-
-@function calc-desktop-padding($padding) {
-    @return $padding / $desktop-layout-width * 100%;
-}
