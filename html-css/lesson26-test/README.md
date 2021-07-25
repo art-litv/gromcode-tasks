@@ -1,8 +1,8 @@
 # Vangoux website layout
 
-### [Layout link](https://gromcode.github.io/layout-sample-project/)
+### [Project layout link](https://art-litv.github.io/vangoux-layout/)
 
-Layout supports mobile (up-to-1024) and desktop (up-to-any) versions
+Layout supports mobile (up-to-640) and desktop (up-to-1440) versions
 
 ### The tech stack is:
 
@@ -11,6 +11,13 @@ Layout supports mobile (up-to-1024) and desktop (up-to-any) versions
 -   [Flexbox](https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout)
 -   [Sass (Scss)](https://sass-lang.com/)
 -   [BEM methodology](https://en.bem.info/methodology/)
+
+### Project structure
+
+#### HTML
+
+HTML sections are divided with comments.
+HTML tag classes are named according to the BEM methodology.
 
 ### Author
 
