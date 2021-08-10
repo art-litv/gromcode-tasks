@@ -1,7 +1,7 @@
 const buttonElement = document.querySelector(".single-use-btn");
 
-const logClicked = () => {
-	console.log("clicked");
+const logClicked = (event) => {
+	console.log(event.target);
 	buttonElement.removeEventListener("click", logClicked);
 };
 
