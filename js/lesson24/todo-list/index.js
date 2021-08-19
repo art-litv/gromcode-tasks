@@ -7,40 +7,40 @@ const tasks = [
 		text: "Buy milk",
 		isDone: false,
 		dateDone: null,
-		date: new Date("2021-08-19"),
+		date: new Date("2021-07-19"),
 	},
 	{
 		id: 2,
 		text: "Pick up Tom from airport",
 		isDone: false,
 		dateDone: null,
-		date: new Date("2021-08-20"),
+		date: new Date("2021-07-20"),
 	},
 	{
 		id: 3,
 		text: "Visit party",
 		isDone: false,
 		dateDone: null,
-		date: new Date("2021-08-21"),
+		date: new Date("2021-07-21"),
 	},
 	{
 		id: 4,
 		text: "Visit doctor",
 		isDone: true,
-		dateDone: new Date("2021-08-23"),
-		date: new Date("2021-08-22"),
+		dateDone: new Date("2021-07-23"),
+		date: new Date("2021-07-22"),
 	},
 	{
 		id: 5,
 		text: "Buy meat",
 		isDone: true,
-		dateDone: new Date("2021-08-24"),
-		date: new Date("2021-08-23"),
+		dateDone: new Date("2021-07-24"),
+		date: new Date("2021-07-23"),
 	},
 ];
 
 function createTask(id, text, isDone = false) {
-	return { id, text, isDone };
+	return { id, text, isDone, dateDone: null, date: new Date() };
 }
 
 function createElement(elementType, class_, attrs, dataset) {
@@ -89,6 +89,7 @@ createTaskBtnElem.addEventListener("click", onCreateBtnClick);
 
 function compareTasks(a, b) {
 	return !a.isDone && !b.isDone ? b.date - a.date : a.isDone - b.isDone;
+	b;
 }
 
 const renderTasks = (tasksList) => {
@@ -112,6 +113,8 @@ const renderTasks = (tasksList) => {
 			listItemElem.append(checkbox, text);
 			return listItemElem;
 		});
+
+	console.log(tasksList);
 
 	listElem.append(...tasksElems);
 };
