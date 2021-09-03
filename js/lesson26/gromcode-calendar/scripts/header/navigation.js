@@ -15,13 +15,11 @@ const onChangeWeek = ({ target }) => {
   const weekShmoment = shmoment(getItem('displayedWeekStart'));
 
   const navIconSelector = '.navigation__nav-icon';
-
   if (!target.classList.contains(navIconSelector) && target.closest(navIconSelector) === null) {
     return;
   }
 
   const { direction } = target.closest('button').dataset;
-
   if (direction === 'next') {
     weekShmoment.add('days', 7);
   } else if (direction === 'prev') {

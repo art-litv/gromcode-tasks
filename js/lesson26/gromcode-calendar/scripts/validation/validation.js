@@ -38,7 +38,6 @@ export const validators = {
     // Если между промежутками меньше `minTimeDiff` минут или start > end,
     // тогда время события некорректное
     const eventTimeDiffMinutes = Math.floor((eventToCheck.end - eventToCheck.start) / 1000 / 60);
-
     return eventTimeDiffMinutes < minTimeDiff ? 'invalidEventTime' : undefined;
   },
 };
