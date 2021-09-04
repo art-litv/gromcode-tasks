@@ -2,30 +2,26 @@ import { getItem, setItem } from '../common/storage.js';
 import { isWithinWeek, stringifyTime, stringifyDate } from '../common/time.utils.js';
 import { openPopup } from '../common/popup.js';
 
-export function setUpdateFormFields(eventToUpdate) {
-  const updateFormFieldElems = document.querySelectorAll('.update-event-form__field');
+const updateFormFieldElems = document.querySelectorAll('.update-event-form__field');
 
-  updateFormFieldElems.forEach(updateFormFieldElem => {
-    switch (updateFormFieldElem.name) {
-      case 'title':
-        updateFormFieldElem.value = eventToUpdate.title;
-        break;
-      case 'date':
-        updateFormFieldElem.value = stringifyDate(eventToUpdate.start);
-        break;
-      case 'startTime':
-        updateFormFieldElem.value = stringifyTime(eventToUpdate.start);
-        break;
-      case 'endTime':
-        updateFormFieldElem.value = stringifyTime(eventToUpdate.end);
-        break;
-      case 'description':
-        updateFormFieldElem.value = eventToUpdate.description;
-        break;
-      default:
-        break;
-    }
-  });
+const findUpdateFormFieldByName = name =>
+  [...updateFormFieldElems].find(updateFormFieldElem => updateFormFieldElem.name === name);
+
+export function setUpdateFormFields(eventToUpdate) {
+  const titleFieldElem = findUpdateFormFieldByName('title');
+  titleFieldElem.value = eventToUpdate.title;
+
+  const dateFieldElem = findUpdateFormFieldByName('date');
+  dateFieldElem.value = stringifyDate(eventToUpdate.start);
+
+  const startTimeFieldElem = findUpdateFormFieldByName('startTime');
+  startTimeFieldElem.value = stringifyTime(eventToUpdate.start);
+
+  const endTimeFieldElem = findUpdateFormFieldByName('endTime');
+  endTimeFieldElem.value = stringifyTime(eventToUpdate.end);
+
+  const descriptionFieldElem = findUpdateFormFieldByName('description');
+  descriptionFieldElem.value = eventToUpdate.description;
 }
 
 export function handleEventClick({ target }) {
