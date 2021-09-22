@@ -1,3 +1,7 @@
+const userAvatarElem = document.querySelector(".user__avatar");
+const userNameElem = document.querySelector(".user__name");
+const userLocationElem = document.querySelector(".user__location");
+
 const fetchUserData = (userName) => {
 	const apiUrl = "https://api.github.com/users/";
 	return fetch(apiUrl + userName).then((response) => response.json());
@@ -5,11 +9,9 @@ const fetchUserData = (userName) => {
 
 const renderUserData = (userData) => {
 	const { avatar_url, login, location } = userData;
-	document.querySelector(".user__avatar").src = avatar_url;
-	document.querySelector(".user__name").textContent = login;
-	document.querySelector(".user__location").textContent = location
-		? `from ${location}`
-		: "";
+	userAvatarElem.src = avatar_url;
+	userNameElem.textContent = login;
+	userLocationElem.textContent = location ? `from ${location}` : "";
 };
 
 const onSearchUser = () => {
