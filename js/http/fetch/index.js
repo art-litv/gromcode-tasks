@@ -9,7 +9,9 @@ const renderUserData = (userName) => {
 	fetchUserData(userName).then((data) => {
 		document.querySelector(".user__avatar").src = data.avatar_url;
 		document.querySelector(".user__name").textContent = data.login;
-		document.querySelector(".user__location").textContent = data.location || "";
+		document.querySelector(".user__location").textContent = data.location
+			? "from" + data.location
+			: "";
 	});
 };
 
