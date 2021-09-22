@@ -1,21 +1,22 @@
 const fetchUserData = (userName) => {
 	const apiUrl = "https://api.github.com/users/";
-	return fetch(apiUrl + userName)
-		.then((data) => data.json())
-		.then((jsonData) => jsonData);
+	return fetch(apiUrl + userName).then((response) => response.json());
 };
 
-const renderUserData = (userName) => {
-	fetchUserData(userName).then((data) => {
-		document.querySelector(".user__avatar").src = data.avatar_url;
-		document.querySelector(".user__name").textContent = data.login;
-		document.querySelector(".user__location").textContent = data.location
-			? "from " + data.location
-			: "";
-	});
+const renderUserData = (userData) => {
+	const { avatar_url, login, location } = userData;
+	document.querySelector(".user__avatar").src = avatar_url;
+	document.querySelector(".user__name").textContent = login;
+	document.querySelector(".user__location").textContent = location
+		? `from ${location}`
+		: "";
 };
 
-document.querySelector(".btn").addEventListener("click", () => {
+const onSearchUser = () => {
 	const userNameInputElem = document.querySelector(".name-form__input");
-	renderUserData(userNameInputElem.value);
-});
+	fetchUserData(userNameInputElem.value).then((userData) =>
+		renderUserData(userData)
+	);
+};
+
+document.querySelector(".btn").addEventListener("click", onSearchUser);
