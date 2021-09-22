@@ -26,4 +26,6 @@ const onSearchUser = () => {
 	);
 };
 
-document.querySelector(".btn").addEventListener("click", onSearchUser);
+document
+	.querySelector(".name-form__btn")
+	.addEventListener("click", onSearchUser);
