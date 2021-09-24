@@ -16,7 +16,7 @@ const renderUserData = (userData) => {
 	const { avatar_url, login, location } = userData;
 	userAvatarElem.src = avatar_url;
 	userNameElem.textContent = login || "";
-	userLocationElem.textContent = location;
+	userLocationElem.textContent = location ? `from ${location}` : "";
 };
 
 const onSearchUser = () => {
