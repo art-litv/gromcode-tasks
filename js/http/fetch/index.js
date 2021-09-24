@@ -2,7 +2,7 @@ const userAvatarElem = document.querySelector(".user__avatar");
 const userNameElem = document.querySelector(".user__name");
 const userLocationElem = document.querySelector(".user__location");
 
-const defaultAvatarUrl = "http://example.com/avatar-url-1.png";
+const defaultAvatarUrl = "https://pngimg.com/uploads/github/github_PNG63.png";
 userAvatarElem.src = defaultAvatarUrl;
 
 const fetchUserData = (userName) => {
