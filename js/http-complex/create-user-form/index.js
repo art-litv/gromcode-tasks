@@ -9,7 +9,11 @@ const createUser = (userData) => {
 		body: JSON.stringify(userData),
 	};
 
-	return fetch(baseUrl, options);
+	return fetch(baseUrl, options)
+		.then((response) =>
+			response.ok ? response.json() : Promise.reject("Failed to create user")
+		)
+		.catch(() => Promise.reject("Failed to create user"));
 };
 
 const loginFormElem = document.querySelector(".login-form");
@@ -30,12 +34,14 @@ const clearLoginFormFields = () => {
 const onLoginFormSubmit = (event) => {
 	event.preventDefault();
 	const loginFormData = new FormData(event.target);
-	createUser(Object.fromEntries(loginFormData)).then((response) => {
-		if (response.ok) response.json().then((res) => alert(JSON.stringify(res)));
-		else errorTextElem.textContent = "Failed to create user";
-
-		clearLoginFormFields();
-	});
+	createUser(Object.fromEntries(loginFormData))
+		.then((response) => {
+			alert(JSON.stringify(response));
+			clearLoginFormFields();
+		})
+		.catch((error) => {
+			errorTextElem.textContent = error;
+		});
 };
 
 loginFormElem.addEventListener("submit", onLoginFormSubmit);
