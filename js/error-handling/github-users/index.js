@@ -14,7 +14,7 @@ const userLocationElem = document.querySelector(".user__location");
 const repoListElem = document.querySelector(".repo-list");
 const spinnerElem = document.querySelector(".spinner");
 
-const defaultAvatar = "https://avatars3.githubusercontent.com/u100011";
+const defaultAvatar = "https://avatars3.githubusercontent.com/u10001";
 
 const setDefaultAvatar = () => {
 	if (userAvatarElem.src !== defaultAvatar) {
