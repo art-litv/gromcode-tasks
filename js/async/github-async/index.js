@@ -54,9 +54,8 @@ const onSearchUser = async () => {
 
   spinnerElem.classList.remove("spinner_hidden");
   try {
-    const { repos_url } = userData;
     const userData = await fetchUserData(userId);
-    const reposData = await fetchRepos(repos_url);
+    const reposData = await fetchRepos(userData.repos_url);
     renderUser(userData);
     renderUserRepos(reposData);
   } catch (err) {
