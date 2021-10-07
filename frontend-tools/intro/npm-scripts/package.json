@@ -1,0 +1,27 @@
+{
+  "name": "npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+    "clean": "if exist \"dist\" del \"dist\" /Q",
+    "copy:html": "copy src\\index.html dist\\index.html",
+    "make-dist-dir": "if not exist \"dist\" mkdir dist",
+    "copy:scripts": "xcopy /s /Y src\\scripts dist\\scripts",
+    "build": "npm-run-all clean make-dist-dir build:styles copy:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "babel": "^6.23.0",
+    "jest": "^27.2.4",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}
