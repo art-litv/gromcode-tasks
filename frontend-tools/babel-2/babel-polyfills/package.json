@@ -1,0 +1,29 @@
+{
+  "name": "babel-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clean": "if exist \"dist\" del \"dist\" /Q",
+    "make-dist-dir": "if not exist \"dist\" mkdir dist",
+    "build:scripts": "babel ./src/*.js --out-dir=./dist",
+    "build": "npm-run-all clean make-dist-dir build:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "core-js": "^3.18.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
+    "@babel/plugin-transform-arrow-functions": "^7.14.5",
+    "@babel/plugin-transform-template-literals": "^7.14.5",
+    "npm-run-all": "^4.1.5"
+  }
+}
