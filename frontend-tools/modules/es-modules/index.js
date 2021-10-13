@@ -1,4 +1,5 @@
 import "./polyfills/array-flat.js";
+import "./polyfills/array-flatMap.js";
 import { default as calcExpression, sum, mult } from "./calculator/index.js";
 import fetchUser from "./profile/gateway.js";
 import { printProfile } from "./profile/index.js";
