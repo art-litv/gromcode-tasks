@@ -1,0 +1,27 @@
+{
+  "name": "webpack-css-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "copy-static": "xcopy src\\index.html .\\dist /Q /Y",
+    "build:wp": "webpack --mode=production",
+    "watch": "webpack --mode=development --devtools eval-source-map -w",
+    "build": "npm-run-all copy-static build:wp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.4.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  },
+  "dependencies": {}
+}
