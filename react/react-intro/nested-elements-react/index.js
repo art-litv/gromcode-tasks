@@ -19,4 +19,4 @@ const greetingElem = React.createElement(
   )
 );
 
-ReactDOM.render(greetingElem, rootElement);
+// ReactDOM.render(greetingElem, rootElement);
