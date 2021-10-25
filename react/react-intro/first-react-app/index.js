@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
 const root = document.querySelector("#root");
 
 const greeting = React.createElement(
@@ -6,4 +9,4 @@ const greeting = React.createElement(
   "Hello, React!"
 );
 
-// ReactDOM.render(greeting, root);
+ReactDOM.render(greeting, root);
