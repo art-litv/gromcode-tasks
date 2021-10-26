@@ -1,7 +1,7 @@
 import React from "react";
 
-function Search() {
-  const { name } = this.props;
+function Search(props) {
+  const { name } = props;
 
   return (
     <div className="search">
