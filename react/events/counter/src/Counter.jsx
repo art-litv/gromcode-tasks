@@ -6,15 +6,15 @@ class Counter extends Component {
     this.state = {
       counter: 0,
     };
-    this.decreaseCounter = this.decreaseCounter.bind(this);
+    this.decrease = this.decrease.bind(this);
   }
 
-  increaseCounter = () =>
+  increase = () =>
     this.setState({
       counter: this.state.counter + 1,
     });
 
-  decreaseCounter() {
+  decrease() {
     this.setState({
       counter: this.state.counter - 1,
     });
@@ -30,7 +30,7 @@ class Counter extends Component {
         <button
           data-action="decrease"
           class="counter__button"
-          onClick={this.decreaseCounter}
+          onClick={this.increase}
         >
           -
         </button>
@@ -40,7 +40,7 @@ class Counter extends Component {
         <button
           data-action="increase"
           class="counter__button"
-          onClick={this.increaseCounter}
+          onClick={this.decrease}
         >
           +
         </button>
