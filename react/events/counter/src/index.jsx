@@ -3,6 +3,6 @@ import ReactDOM from "react-dom";
 
 import "./index.scss";
 
-import App from "./App.jsx";
+import Counter from "./Counter.jsx";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Counter />, document.getElementById("root"));
