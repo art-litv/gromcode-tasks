@@ -30,7 +30,7 @@ class Counter extends Component {
         <button
           data-action="decrease"
           class="counter__button"
-          onClick={this.increase}
+          onClick={this.decrease}
         >
           -
         </button>
@@ -40,7 +40,7 @@ class Counter extends Component {
         <button
           data-action="increase"
           class="counter__button"
-          onClick={this.decrease}
+          onClick={this.increase}
         >
           +
         </button>
