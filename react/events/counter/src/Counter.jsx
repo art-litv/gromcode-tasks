@@ -29,17 +29,17 @@ export default class Counter extends Component {
       <div class="counter">
         <button
           data-action="decrease"
-          class="counter__button"
+          className="counter__button"
           onClick={this.decrease}
         >
           -
         </button>
-        <span class="counter__value" onClick={() => this.reset()}>
+        <span className="counter__value" onClick={() => this.reset()}>
           {this.state.counter}
         </span>
         <button
           data-action="increase"
-          class="counter__button"
+          className="counter__button"
           onClick={this.increase}
         >
           +
