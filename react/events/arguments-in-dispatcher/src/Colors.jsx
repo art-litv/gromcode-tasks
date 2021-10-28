@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 export default class Colors extends Component {
   colors = {
-    RED: "red",
-    GREEN: "green",
-    BLUE: "blue",
+    RED: "#f00",
+    GREEN: "#0f0",
+    BLUE: "#00f",
   };
 
   changeBodyColor(color) {
