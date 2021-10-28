@@ -1,11 +1,11 @@
 import React from "react";
 
-import Colors from "./Colors.jsx";
+import Toggler from "./Toggler.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Colors />
+      <Toggler />
     </div>
   );
 }
