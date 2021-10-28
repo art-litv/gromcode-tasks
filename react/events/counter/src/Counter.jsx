@@ -10,14 +10,14 @@ export default class Counter extends Component {
   }
 
   increaseCounter = () =>
-    this.setState((state) => ({
-      counter: state.counter + 1,
-    }));
+    this.setState({
+      counter: this.state.counter + 1,
+    });
 
   decreaseCounter() {
-    this.setState((state) => ({
-      counter: state.counter - 1,
-    }));
+    this.setState({
+      counter: this.state.counter - 1,
+    });
   }
 
   reset() {
