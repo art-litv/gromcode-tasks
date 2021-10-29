@@ -19,7 +19,7 @@ export default class Page extends Component {
         </button>
         <button
           className="btn"
-          onClick={() => this.setState({ text: "Another exciting text" })}
+          onClick={() => this.setState({ text: "Another exciting text." })}
         >
           Text2
         </button>
