@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import User from './User.jsx';
 
-export default class UserList extends Component {
+export default class UsersList extends Component {
   constructor(props) {
     super(props);
     this.state = {
