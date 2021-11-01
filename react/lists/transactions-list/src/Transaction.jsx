@@ -12,7 +12,7 @@ const Transition = ({ from, to, amount, rate, time }) => {
         {from} → {to}
       </span>
       <span className="transaction__rate">{rate}</span>
-      <span className="transaction__amount">{amount}</span>
+      <span className="transaction__amount">{new Intl.NumberFormat('en-GB').format(amount)}</span>
     </li>
   );
 };
