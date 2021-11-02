@@ -2,7 +2,7 @@ import React from 'react';
 
 import moment from 'moment';
 
-const Transition = ({ from, to, amount, rate, time }) => {
+const Transaction = ({ from, to, amount, rate, time }) => {
   const momentTime = moment(time);
   return (
     <li className="transaction">
@@ -17,4 +17,4 @@ const Transition = ({ from, to, amount, rate, time }) => {
   );
 };
 
-export default Transition;
+export default Transaction;
