@@ -16,13 +16,12 @@ export default class ConnectionStatus extends React.Component {
   }
 
   setStatus(isOnline) {
-    console.log(isOnline);
     this.setState({ online: isOnline });
   }
 
   render() {
     const statusText = this.state.online ? 'Online' : 'Offline';
-    const statusStyles = 'status' + this.state.online ? '' : ' status_offline';
+    const statusStyles = 'status' + (this.state.online ? '' : ' status_offline');
     return <div className={statusStyles}>{statusText}</div>;
   }
 }
