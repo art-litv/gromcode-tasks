@@ -4,6 +4,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      title: `${window.innerWidth}px - ${window.innerHeight}px`,
       width: window.innerWidth,
       height: window.innerHeight,
     };
@@ -19,12 +20,14 @@ class App extends React.Component {
 
   updateDimensions = () => {
     this.setState({
+      title: `${window.innerWidth}px - ${window.innerHeight}px`,
       width: window.innerWidth,
       height: window.innerHeight,
     });
   };
 
   render() {
+    document.title = this.state.title;
     return (
       <div className="dimensions">
         {this.state.width}px - {this.state.height}px
