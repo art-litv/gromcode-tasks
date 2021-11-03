@@ -30,7 +30,7 @@ class App extends React.Component {
     document.title = this.state.title;
     return (
       <div className="dimensions">
-        {this.state.width}px - {this.state.height}px
+        {this.state.width} x {this.state.height}
       </div>
     );
   }
