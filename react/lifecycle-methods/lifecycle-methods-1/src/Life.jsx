@@ -16,7 +16,7 @@ export default class Life extends React.Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate(nextProps, nextState): decide to render or not to render');
-    return true;
+    return boolean(nextState.state);
   }
 
   componentDidUpdate(prevProps, prevState) {
