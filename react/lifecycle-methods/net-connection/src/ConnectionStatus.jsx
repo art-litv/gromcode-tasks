@@ -22,7 +22,7 @@ export default class ConnectionStatus extends React.Component {
 
   render() {
     const statusText = this.state.online ? 'Online' : 'Offline';
-    const statusStyles = `status ${this.state.online ? '' : 'status_offline'}`;
+    const statusStyles = 'status' + this.state.online ? '' : ' status_offline';
     return <div className={statusStyles}>{statusText}</div>;
   }
 }
