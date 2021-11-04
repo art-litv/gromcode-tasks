@@ -5,7 +5,7 @@ export default class UserForm extends React.Component {
     super(props);
   }
 
-  setRef = ({ node }) => {
+  setRef = node => {
     this.formRef = node;
   };
 
@@ -16,11 +16,12 @@ export default class UserForm extends React.Component {
         onSubmit={event => {
           event.preventDefault();
           const formData = [...new FormData(this.formRef)].reduce(
-            (acc, ([name, value]) => ({ ...acc, [name]: value }), {}),
+            (acc, [name, value]) => ({ ...acc, [name]: value }),
+            {},
           );
           this.props.onSubmit(formData);
         }}
-        ref={this.onRef}
+        ref={this.setRef}
       >
         <h1 className="form-title">Profile</h1>
         <div className="form-control">
