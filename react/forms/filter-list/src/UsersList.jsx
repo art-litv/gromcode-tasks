@@ -3,7 +3,7 @@ import React from 'react';
 import User from './User.jsx';
 import Filter from './Filter.jsx';
 
-export default class UserList extends React.Component {
+export default class UsersList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

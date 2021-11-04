@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserList from './UserList.jsx';
+import UsersList from './UsersList.jsx';
 
 const users = [
   {
@@ -26,5 +26,5 @@ const users = [
 ];
 
 export default function App() {
-  return <UserList users={users} />;
+  return <UsersList users={users} />;
 }
