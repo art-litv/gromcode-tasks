@@ -29,8 +29,8 @@ export default class UsersList extends React.Component {
       <>
         <Filter onChange={this.onChange} {...this.state} />
         <ul className="users">
-          {users.map(({ id, ...userData }) => (
-            <User key={id} {...userData} />
+          {users.map(user => (
+            <User key={user.id} {...user} />
           ))}
         </ul>
       </>
