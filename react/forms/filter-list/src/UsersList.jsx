@@ -19,7 +19,9 @@ export default class UsersList extends React.Component {
   };
 
   getFilteredUsers = matchName => {
-    return this.props.users.filter(({ name }) => name.includes(matchName));
+    return this.props.users.filter(({ name }) =>
+      name.toUpperCase().includes(matchName.toUpperCase()),
+    );
   };
 
   render() {
