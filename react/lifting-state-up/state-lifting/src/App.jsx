@@ -7,7 +7,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null,
+      userData: null,
     };
   }
 
@@ -17,18 +17,18 @@ export default class App extends React.Component {
 
   fetchUser = userId => {
     fetch('https://api.github.com/users/' + userId)
-      .then(user => user.json())
-      .then(user => this.setState({ user }));
+      .then(userData => userData.json())
+      .then(userData => this.setState({ userData }));
   };
 
   render() {
-    if (!this.state.user) return null;
+    if (!this.state.userData) return null;
     return (
       <div className="page">
         <header className="header">
-          <UserMenu userData={this.state.user} />
+          <UserMenu userData={this.state.userData} />
         </header>
-        <UserProfile userData={this.state.user} />
+        <UserProfile userData={this.state.userData} />
       </div>
     );
   }
