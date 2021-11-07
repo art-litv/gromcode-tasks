@@ -29,9 +29,10 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Numbers number={this.state.number} />
-        <EvenNumbers number={this.state.number} />
-        <OddNumbers number={this.state.number} />
+        <OddNumbers title="Odd number" number={this.state.number} />
+        <EvenNumbers title="Even number" number={this.state.number} />
+        <Numbers title="All numbers" number={this.state.number} />
+        <Numbers title={`Just ${this.state.number}`} number={this.state.number} />
       </>
     );
   }

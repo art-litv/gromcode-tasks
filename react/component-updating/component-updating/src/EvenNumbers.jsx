@@ -12,6 +12,6 @@ export default class EvenNumbers extends React.Component {
   }
 
   render() {
-    return <Numbers title="Even number" number={this.props.number} />;
+    return <Numbers title={this.props.title} number={this.props.number} />;
   }
 }
