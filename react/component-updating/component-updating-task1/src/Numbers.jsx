@@ -2,16 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class Numbers extends React.PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    const { title, number } = this.props;
     return (
       <div className="number">
-        <span className="number__title">{title}</span>
-        <span className="number__value">{number}</span>
+        <span className="number__title">{this.props.title}</span>
+        <span className="number__value">{this.props.number}</span>
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Numbers from './Numbers.jsx';
 
-export default class OddNumbers extends React.Component {
+export default class OddNumbers extends React.PureComponent {
   constructor(props) {
     super(props);
   }
