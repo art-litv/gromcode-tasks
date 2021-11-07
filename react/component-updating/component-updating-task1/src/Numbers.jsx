@@ -18,5 +18,5 @@ Numbers.propTypes = {
 };
 
 Numbers.defaultProps = {
-  title: 'Numbers',
+  title: 'Some number',
 };
