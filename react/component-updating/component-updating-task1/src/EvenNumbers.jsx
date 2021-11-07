@@ -2,7 +2,7 @@ import React from 'react';
 
 import Numbers from './Numbers.jsx';
 
-export default class EvenNumbers extends React.PureComponent {
+export default class EvenNumbers extends React.Component {
   shouldComponentUpdate(nextProps) {
     return nextProps.number % 2 === 0;
   }
