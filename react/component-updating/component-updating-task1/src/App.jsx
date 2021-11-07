@@ -5,12 +5,9 @@ import EvenNumbers from './EvenNumbers.jsx';
 import OddNumbers from './OddNumbers.jsx';
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      number: 0,
-    };
-  }
+  state = {
+    number: 0,
+  };
 
   componentDidMount() {
     this.interval = setInterval(() => {

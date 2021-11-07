@@ -5,4 +5,4 @@ import './index.scss';
 
 import App from './App.jsx';
 
-ReactDOM.render(<App userId="github" />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
