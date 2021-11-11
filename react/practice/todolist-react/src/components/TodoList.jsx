@@ -1,6 +1,6 @@
 import React from "react";
 
-import TasksAPI from "./TasksAPI";
+import TasksAPI from "../services/TasksAPI";
 
 import TasksList from "./TasksList.jsx";
 import CreateTask from "./CreateTask.jsx";
