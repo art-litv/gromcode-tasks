@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./Home.jsx";
 import Products from "./Products.jsx";
@@ -10,12 +10,12 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/products" component={Products} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="*" component={PageNotFound} />
+        </Switch>
       </BrowserRouter>
     </div>
   );
