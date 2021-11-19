@@ -14,11 +14,15 @@ export default function User() {
   }, [userId]);
 
   return (
-    <div class="user">
-      <img alt="User Avatar" src={userData.avatarUrl} class="user__avatar" />
-      <div class="user__info">
-        <span class="user__name">{userData.name}</span>
-        <span class="user__location">{userData.location}</span>
+    <div className="user">
+      <img
+        alt="User Avatar"
+        src={userData.avatarUrl}
+        className="user__avatar"
+      />
+      <div className="user__info">
+        <span className="user__name">{userData.name}</span>
+        <span className="user__location">{userData.location}</span>
       </div>
     </div>
   );

@@ -7,12 +7,12 @@ import Users from "./Users.jsx";
 export default function App() {
   return (
     <BrowserRouter>
-      <div class="page">
-        <ul class="navigation">
-          <li class="navigation__item">
+      <div className="page">
+        <ul className="navigation">
+          <li className="navigation__item">
             <Link to="/">Home</Link>
           </li>
-          <li class="navigation__item">
+          <li className="navigation__item">
             <Link to="/users">Users</Link>
           </li>
         </ul>

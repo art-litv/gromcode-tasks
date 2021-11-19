@@ -5,13 +5,13 @@ import User from "./User.jsx";
 
 export default function Users() {
   return (
-    <div class="page__content">
+    <div className="page__content">
       <h1>Users</h1>
-      <ul class="navigation">
-        <li class="navigation__item">
+      <ul className="navigation">
+        <li className="navigation__item">
           <Link to="/users/github">Github</Link>
         </li>
-        <li class="navigation__item">
+        <li className="navigation__item">
           <Link to="/users/facebook">Facebook</Link>
         </li>
       </ul>
