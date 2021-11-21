@@ -18,7 +18,7 @@ export default function App() {
             </li>
           </ul>
           <Switch>
-            <Route exact path="/users">
+            <Route exact path="/">
               <span>Select a user please</span>
             </Route>
             <Route path="/users/:userId" component={User} />
