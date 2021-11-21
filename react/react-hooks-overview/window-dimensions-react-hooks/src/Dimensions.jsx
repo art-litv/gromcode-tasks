@@ -16,7 +16,7 @@ export default function Dimensions() {
   }, []);
 
   return (
-    <div class="dimensions">
+    <div className="dimensions">
       {size.width}px - {size.height}px
     </div>
   );
