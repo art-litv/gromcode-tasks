@@ -6,16 +6,16 @@ export default function ConnectionStatus() {
 
   useEffect(() => {
     window.addEventListener("online", () => setStatus("online"));
-    window.addEventListener("online", () => setStatus("offline"));
+    window.addEventListener("offline", () => setStatus("offline"));
 
     return () => {
       window.removeEventListener("online", () => setStatus("online"));
-      window.removeEventListener("online", () => setStatus("offline"));
+      window.removeEventListener("offline", () => setStatus("offline"));
     };
   }, []);
 
   return (
-    <div className={`status ${status === "offline" && offlineClass}`}>
+    <div className={`status ${status === "offline" ? offlineClass : ""}`}>
       {status}
     </div>
   );
