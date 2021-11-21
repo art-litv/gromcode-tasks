@@ -4,14 +4,14 @@ export default function Counter() {
   const [value, setValue] = useState(0);
 
   return (
-    <div class="counter">
-      <button class="counter__button" onClick={() => setValue(value - 1)}>
+    <div className="counter">
+      <button className="counter__button" onClick={() => setValue(value - 1)}>
         -
       </button>
-      <span class="counter__value" onClick={() => setValue(0)}>
+      <span className="counter__value" onClick={() => setValue(0)}>
         {value}
       </span>
-      <button class="counter__button" onClick={() => setValue(value + 1)}>
+      <button className="counter__button" onClick={() => setValue(value + 1)}>
         +
       </button>
     </div>
