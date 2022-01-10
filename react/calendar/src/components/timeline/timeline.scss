@@ -1,0 +1,28 @@
+.timeline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+
+  &__circle {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  &__line {
+    height: 5px;
+    flex-grow: 3;
+    background-color: red;
+    border-radius: 25%;
+
+    &:before {
+      content: "";
+      width: 50%;
+      height: 5px;
+      background-color: red;
+      position: absolute;
+    }
+  }
+}

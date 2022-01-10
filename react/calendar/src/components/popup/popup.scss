@@ -1,0 +1,36 @@
+.popup {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  &__close-btn {
+    margin-left: auto;
+    transform: rotate(45deg) scale(2);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+  }
+
+  &__delete-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    max-width: 18px;
+  }
+}
