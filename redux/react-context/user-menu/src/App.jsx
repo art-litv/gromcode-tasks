@@ -2,16 +2,16 @@ import React, { useState } from "react";
 
 import Header from "./Header";
 
-import { userData, UserContext } from "./user";
+import { user, UserContext } from "./user";
 
 import "./index.scss";
 
 function App() {
-  const [user, setUser] = useState(userData);
+  const [userData, setUser] = useState(user);
 
   return (
     <div className="page">
-      <UserContext.Provider value={user}>
+      <UserContext.Provider value={userData}>
         <Header />
       </UserContext.Provider>
     </div>

@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-export const userData = {
+export const user = {
   name: "Nikola Tesla",
   avatar_url: "https://avatars3.githubusercontent.com/u10001",
 };
