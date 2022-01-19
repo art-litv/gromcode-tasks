@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import ThemedButton from "./ThemedButton.jsx";
 import { themes, ThemeContext } from "./themes";
 
 import "./index.scss";
@@ -15,9 +16,9 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={theme}>
-        <ThemedButton text={"Context button"} onClick={switchTheme} />
+        <ThemedButton text="Context button" onClick={switchTheme} />
       </ThemeContext.Provider>
-      <ThemedButton text={"Default button"} />
+      <ThemedButton text="Default button" onClick={switchTheme} />
     </>
   );
 }
