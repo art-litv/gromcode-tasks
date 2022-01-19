@@ -6,16 +6,18 @@ import { user, UserContext } from "./user";
 
 import "./index.scss";
 
-function App() {
-  const [userData, setUser] = useState(user);
+export default class App extends React.Component {
+  state = {
+    userData: user,
+  };
 
-  return (
-    <div className="page">
-      <UserContext.Provider value={userData}>
-        <Header />
-      </UserContext.Provider>
-    </div>
-  );
+  render() {
+    return (
+      <div className="page">
+        <UserContext.Provider value={this.state.userData}>
+          <Header />
+        </UserContext.Provider>
+      </div>
+    );
+  }
 }
-
-export default App;
