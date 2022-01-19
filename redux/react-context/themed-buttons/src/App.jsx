@@ -18,7 +18,7 @@ function App() {
       <ThemeContext.Provider value={theme}>
         <ThemedButton text="Context button" onClick={switchTheme} />
       </ThemeContext.Provider>
-      <ThemedButton text="Default button" onClick={switchTheme} />
+      <ThemedButton text="Default Theme" onClick={switchTheme} />
     </>
   );
 }

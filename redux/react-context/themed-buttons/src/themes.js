@@ -5,4 +5,4 @@ export const themes = {
   dark: { color: "#ffffff", backgroundColor: "#222222" },
 };
 
-export const ThemeContext = createContext();
+export const ThemeContext = createContext(themes.dark);
