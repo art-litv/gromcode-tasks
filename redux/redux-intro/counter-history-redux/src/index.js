@@ -16,8 +16,14 @@ getActionBtnElem("decrement").onclick = onDecrement;
 
 store.subscribe(() => {
   const nums = store.getState().history;
-  const strNums = nums.map((num) => (num === 1 ? "+1" : num));
-  const sum = nums.reduce((acc, num) => acc + num, 0);
 
-  resultElem.textContent = `${strNums.join("")} = ${sum}`;
+  const result = nums.length
+    ? (() => {
+        const strNums = nums.map((num) => (num === 1 ? "+1" : num));
+        const sum = nums.reduce((acc, num) => acc + num, 0);
+        return `${strNums.join("")} = ${sum}`;
+      })()
+    : "";
+
+  resultElem.textContent = result;
 });
