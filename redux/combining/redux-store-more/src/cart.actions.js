@@ -1,10 +1,10 @@
 export const ADD_PRODUCT = "CART/ADD_PRODUCT";
 export const REMOVE_PRODUCT = "CART/REMOVE_PRODUCT";
 
-export const addProduct = (productData) => ({
+export const addProduct = (product) => ({
   type: ADD_PRODUCT,
   payload: {
-    productData,
+    product,
   },
 });
 
