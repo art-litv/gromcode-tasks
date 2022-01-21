@@ -1,6 +1,11 @@
 import { createStore, combineReducers } from "redux";
 
 import usersReducer from "./users.reducer";
-import counerReducer from "./counter.reducer";
+import counterReducer from "./counter.reducer";
 
-export default createStore(combineReducers(counerReducer, usersReducer));
+const appReducer = combineReducers({
+  counter: counterReducer,
+  users: usersReducer,
+});
+
+export default createStore(appReducer);
