@@ -1,4 +1,4 @@
-import { ADD_PRODUCT, DELETE_PRODUCT } from "./cart.actions.js";
+import { ADD_PRODUCT, REMOVE_PRODUCT } from "./cart.actions.js";
 
 export default function cartReducer(state = { products: [] }, action) {
   const { payload } = action;
@@ -8,7 +8,7 @@ export default function cartReducer(state = { products: [] }, action) {
         ...state,
         products: state.products.concat(payload.product),
       };
-    case DELETE_PRODUCT:
+    case REMOVE_PRODUCT:
       return {
         ...state,
         products: state.products.filter({ id } !== payload.productId),
