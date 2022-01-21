@@ -1,4 +1,4 @@
-import store from "./store";
-import { addUser, deleteUser } from "./users.actions";
+import store from "./store.js";
+import { addUser, deleteUser } from "./users.actions.js";
 
-// dispatch actions
+store.subscribe(() => console.log(store.getState()));

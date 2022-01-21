@@ -1,4 +1,4 @@
-import { ADD_USER, DELETE_USER } from "./users.actions";
+import { ADD_USER, DELETE_USER } from "./users.actions.js";
 
 export default function usersReducer(state = { usersList: [] }, action) {
   const { payload } = action;
