@@ -11,7 +11,7 @@ export default function cartReducer(state = { products: [] }, action) {
     case REMOVE_PRODUCT:
       return {
         ...state,
-        products: state.products.filter({ id } !== payload.productId),
+        products: state.products.filter(({ id }) => id !== payload.productId),
       };
     default:
       return state;
