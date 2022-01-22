@@ -2,8 +2,7 @@ import React from "react";
 
 function Pagination({ goPrev, goNext, currentPage, totalItems, itemsPerPage }) {
   const isFirstPage = currentPage === 0;
-  const isLastPage = currentPage === Math.floor(totalItems / itemsPerPage);
-  console.log(isLastPage);
+  const isLastPage = currentPage + 1 === Math.ceil(totalItems / itemsPerPage);
 
   return (
     <div className="pagination">
