@@ -9,7 +9,7 @@ function Pagination({ goPrev, goNext, currentPage, totalItems, itemsPerPage }) {
       <button className="btn" onClick={goPrev} disabled={isFirstPage}>
         {!isFirstPage && "←"}
       </button>
-      <span className="pagination__page">{currentPage}</span>
+      <span className="pagination__page">{currentPage + 1}</span>
       <button className="btn" onClick={goNext} disabled={isLastPage}>
         {!isLastPage && "→"}
       </button>
