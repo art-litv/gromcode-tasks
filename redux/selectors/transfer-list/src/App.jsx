@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 
 import store from "./store";
 
-import TransferList from "./components/TransferList";
+import TransferList from "./options/TransferList";
 
 export default function App() {
   return (
