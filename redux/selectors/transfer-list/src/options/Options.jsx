@@ -1,6 +1,6 @@
 import React from "react";
 
-function Option({ title, options, moveOption }) {
+function Options({ title, options, moveOption }) {
   return (
     <div className="options">
       <div className="options__title">{title}</div>
@@ -20,4 +20,4 @@ function Option({ title, options, moveOption }) {
   );
 }
 
-export default Option;
+export default Options;
