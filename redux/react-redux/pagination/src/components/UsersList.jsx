@@ -11,12 +11,6 @@ function getPageUsers(array, page_size, page_number) {
 }
 
 const UsersList = ({ users, goPrev, goNext, currentPage, perPage }) => {
-  const [activeUsers, setActiveUsers] = useState([]);
-
-  useEffect(() => {
-    setActiveUsers(getPageUsers(users, perPage, currentPage));
-  }, [currentPage]);
-
   return (
     <div>
       <Pagination
@@ -27,7 +21,7 @@ const UsersList = ({ users, goPrev, goNext, currentPage, perPage }) => {
         itemsPerPage={perPage}
       />
       <ul className="users">
-        {activeUsers.map((user) => (
+        {getPageUsers(users, perPage, currentPage).map((user) => (
           <User key={user.id} name={user.name} age={user.age} />
         ))}
       </ul>
