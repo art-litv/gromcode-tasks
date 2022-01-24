@@ -11,6 +11,8 @@ function getPageUsers(array, page_size, page_number) {
 }
 
 const UsersList = ({ users, goPrev, goNext, currentPage, perPage }) => {
+  const usersPerPage = 3;
+
   return (
     <div>
       <Pagination
@@ -18,19 +20,15 @@ const UsersList = ({ users, goPrev, goNext, currentPage, perPage }) => {
         goNext={goNext}
         currentPage={currentPage}
         totalItems={users.length}
-        itemsPerPage={perPage}
+        itemsPerPage={usersPerPage}
       />
       <ul className="users">
-        {getPageUsers(users, perPage, currentPage).map((user) => (
+        {getPageUsers(users, usersPerPage, currentPage).map((user) => (
           <User key={user.id} name={user.name} age={user.age} />
         ))}
       </ul>
     </div>
   );
-};
-
-UsersList.defaultProps = {
-  perPage: 3,
 };
 
 const mapState = (state) => ({
