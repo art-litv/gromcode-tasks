@@ -1,14 +1,14 @@
 import React from "react";
 
-function Option({ title, optionsList, onToggle }) {
+function Option({ title, options, moveOption }) {
   return (
     <div className="options">
       <div className="options__title">{title}</div>
       <ul className="options__list">
-        {optionsList.map((option) => (
+        {options.map((option) => (
           <li key={option.id}>
             <button
-              onClick={() => onToggle(option.id)}
+              onClick={() => moveOption(option.id)}
               className="options__list-item"
             >
               {option.name}

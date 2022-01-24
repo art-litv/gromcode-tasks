@@ -6,11 +6,11 @@ import { availableOptionsSelector } from "../options/options.selectors";
 import { toggleOption } from "../options/options.actions";
 
 const mapState = (state) => ({
-  optionsList: availableOptionsSelector(state),
+  options: availableOptionsSelector(state),
 });
 
 const mapDispatch = {
-  onToggle: toggleOption,
+  moveOption: toggleOption,
 };
 
 export default connect(mapState, mapDispatch)(Options);
