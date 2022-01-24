@@ -7,8 +7,8 @@ import Pagination from "./Pagination";
 import User from "./User";
 
 const UsersList = ({ users, goPrev, goNext, currentPage }) => {
-  const usersPerPage = 3;
-  const start = currentPage * usersPerPage;
+  const itemsPerPage = 3;
+  const start = currentPage * itemsPerPage;
   const usersToDisplay = users.slice(start, start + itemsPerPage);
 
   return (
@@ -18,7 +18,7 @@ const UsersList = ({ users, goPrev, goNext, currentPage }) => {
         goNext={goNext}
         currentPage={currentPage}
         totalItems={users.length}
-        itemsPerPage={usersPerPage}
+        itemsPerPage={itemsPerPage}
       />
       <ul className="users">
         {usersToDisplay.map((user) => (
