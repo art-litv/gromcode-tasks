@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { filteredUsersSelector, filterTextSelector } from "./users.selectors";
 import { setFilterText } from "./users.actions";
 
-import Filter from "./Filter";
+import Filter from "../Filter";
 import User from "./User";
 
 function UsersList({ filteredUsers, filterText, onFilterTextChange }) {
