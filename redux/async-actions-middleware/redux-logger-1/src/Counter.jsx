@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { counterSelector } from "./counter/counter.selectors";
 import { increment, decrement, reset } from "./counter/counter.actions";
 
-const Counter = ({ value, onIncrease, onDecrease }) => {
+const Counter = ({ value, onIncrease, onDecrease, onReset }) => {
   return (
     <div class="counter">
       <button class="counter__button" onClick={onDecrease}>
