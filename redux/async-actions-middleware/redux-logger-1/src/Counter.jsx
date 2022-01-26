@@ -6,14 +6,14 @@ import { increment, decrement, reset } from "./counter/counter.actions";
 
 const Counter = ({ value, onIncrease, onDecrease, onReset }) => {
   return (
-    <div class="counter">
-      <button class="counter__button" onClick={onDecrease}>
+    <div className="counter">
+      <button className="counter__button" onClick={onDecrease}>
         -
       </button>
-      <span class="counter__value" onClick={onReset}>
+      <span className="counter__value" onClick={onReset}>
         {value}
       </span>
-      <button class="counter__button" onClick={onIncrease}>
+      <button className="counter__button" onClick={onIncrease}>
         +
       </button>
     </div>
