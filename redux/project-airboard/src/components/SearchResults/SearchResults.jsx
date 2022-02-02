@@ -21,9 +21,8 @@ function SearchResults({ flights, flightsType, getFlights, setFlightsType, class
     // Set default params if going to '/departures' or '/arrivals' without params
     const defaultParams = getDateParams();
     const areCurrentParams = [...params.entries()].length;
-    getFlights().then(() => {
-      if (!areCurrentParams) setParams(defaultParams);
-    });
+    !areCurrentParams && setParams(defaultParams);
+    getFlights(params.get('date'));
   }, []);
 
   useEffect(() => {

@@ -1,13 +1,16 @@
 const parseRawFlightsList = flightsList =>
   flightsList.map(flight => {
-    const scheduleTime = new Date(flight.timeArrShedule || flight.timeDepShedule);
+    const scheduleTime = new Date(flight.timeArrShedule || flight.timeDepShedule)
+      .toTimeString()
+      .slice(0, 5);
+
     return {
       terminal: flight.term,
-      localTime: scheduleTime.toTimeString().slice(0, 5),
-      status: flight.status,
+      localTime: scheduleTime,
+      status: getStatusText(flight.status, scheduleTime),
       destination: flight['airportFromID.city_en'] || flight['airportToID.city_en'],
       airline: flight.airline.en,
-      flightId: flight.fltNo,
+      flightId: flight.codeShareData[0].codeShare,
     };
   });
 
@@ -30,3 +33,26 @@ export const sortByTime = (flights, dir = 'asc') =>
     const date2 = new Date('1970/01/01 ' + f2.localTime);
     return dir === 'asc' ? date1 - date2 : date2 - date1;
   });
+
+export const getStatusText = (statusCode, time) => {
+  switch (statusCode) {
+    case 'DP':
+      return `Flew out ${time}`;
+    case 'LN':
+      return `Landed ${time}`;
+    case 'FR':
+      return `In flight`;
+    case 'ON':
+      return 'In time';
+    case 'GC':
+      return 'Landing complete';
+    case 'DL':
+      return 'Delayed';
+    case 'CK':
+      return 'Registration';
+    case 'BD':
+      return 'Landing';
+    default:
+      return statusCode;
+  }
+};

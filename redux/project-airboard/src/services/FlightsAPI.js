@@ -1,8 +1,8 @@
 export default class FlightsAPI {
-  static baseUrl = `https://api.iev.aero/api/flights/${new Date().toISOString().slice(0, 10)}`;
+  static baseUrl = `https://api.iev.aero/api/flights/`;
 
-  static getFlights = async () => {
-    const response = await fetch(FlightsAPI.baseUrl);
+  static getFlights = async date => {
+    const response = await fetch(FlightsAPI.baseUrl + date);
     return await response.json();
   };
 }
