@@ -14,9 +14,7 @@ export default function App() {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/departures" element={<MainPage />} />
-            <Route path="/arrivals" element={<MainPage />} />
+            <Route path="/*" element={<MainPage />} />
           </Routes>
         </Router>
       </Provider>

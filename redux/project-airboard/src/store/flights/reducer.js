@@ -1,8 +1,8 @@
 import { FLIGHTS_DATA_RECEIVED, SET_FLIGHTS_TYPE } from './actions';
 
 const initialState = {
-  flightsType: 'departures',
-  flightsList: { departures: [], arrivals: [] },
+  flightsType: 'departure',
+  flightsList: { departure: [], arrival: [] },
 };
 
 export default function flightsReducer(state = initialState, action) {

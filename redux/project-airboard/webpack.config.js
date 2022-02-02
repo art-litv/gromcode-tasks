@@ -2,13 +2,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
   const config = {
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
+      path: path.resolve(__dirname, './dist'),
       filename: 'bundle.js',
+      publicPath: '/',
     },
     module: {
       rules: [
@@ -34,11 +37,15 @@ module.exports = (env, argv) => {
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html',
+        publicPath: '/',
       }),
     ],
     devServer: {
       hot: true,
       historyApiFallback: true,
+      contentBase: path.resolve(__dirname, './dist'),
+      open: true,
+      compress: true,
     },
   };
 

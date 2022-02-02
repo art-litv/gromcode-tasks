@@ -7,7 +7,7 @@ import Body from './Table.Body';
 
 import './table.scss';
 
-export default function Table({ className, columns, data }) {
+function Table({ className, columns, data }) {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
     columns,
     data,
@@ -20,3 +20,5 @@ export default function Table({ className, columns, data }) {
     </table>
   );
 }
+
+export default React.memo(Table, (prevProps, nextProps) => prevProps.data === nextProps.data);
