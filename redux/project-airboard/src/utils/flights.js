@@ -7,7 +7,7 @@ const parseRawFlightsList = flightsList =>
       status: flight.status,
       destination: flight['airportFromID.city_en'] || flight['airportToID.city_en'],
       airline: flight.airline.en,
-      flightId: flight['fltNo'],
+      flightId: flight.fltNo,
     };
   });
 
