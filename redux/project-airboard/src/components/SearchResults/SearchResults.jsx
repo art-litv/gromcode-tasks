@@ -10,17 +10,24 @@ import Table from '../Table';
 import { getColumns } from '../../utils/flightTableUtils';
 import { searchFlights, sortByTime } from '../../utils/flights';
 import { ROUTES_FLIGHTS_TYPE } from '../../store/flights/routes-state';
+import { getDateParams } from '../../utils/urlParams';
 
 function SearchResults({ flights, flightsType, getFlights, setFlightsType, className }) {
   const location = useLocation();
-  const searchParam = useSearchParams()[0].get('search')?.toLowerCase();
+  const [params, setParams] = useSearchParams();
+  const searchParam = params.get('search')?.toLowerCase();
 
   useEffect(() => {
-    getFlights();
+    // Set default params if going to '/departures' or '/arrivals' without params
+    const defaultParams = getDateParams();
+    const areCurrentParams = [...params.entries()].length;
+    getFlights().then(() => {
+      if (!areCurrentParams) setParams(defaultParams);
+    });
   }, []);
 
   useEffect(() => {
-    setFlightsType(ROUTES_FLIGHTS_TYPE[location.pathname]);
+    setFlightsType(ROUTES_FLIGHTS_TYPE[location.pathname.replaceAll('/', '')]);
   }, [location.pathname]);
 
   const filteredFlights = sortByTime(searchFlights(flights, searchParam || ''));

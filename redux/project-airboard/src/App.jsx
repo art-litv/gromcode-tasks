@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import store from './store';
 
 import Header from './components/Header';
-import { MainPage } from './pages';
+import DepartureSearchResults from './components/SearchResults/DepartureSearchResults';
+import ArrivalSearchResults from './components/SearchResults/ArrivalSearchResults';
+
+import { MainPage, NotFoundPage } from './pages';
 
 export default function App() {
   return (
@@ -14,7 +17,17 @@ export default function App() {
         <Router>
           <Header />
           <Routes>
-            <Route path="/*" element={<MainPage />} />
+            <Route path="/" element={<MainPage />}>
+              <Route
+                path="departures"
+                element={<DepartureSearchResults className="main-page__search-results" />}
+              />
+              <Route
+                path="arrivals"
+                element={<ArrivalSearchResults className="main-page__search-results" />}
+              />
+            </Route>
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Router>
       </Provider>
